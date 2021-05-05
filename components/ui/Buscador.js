@@ -4,7 +4,7 @@ const Buscador = () => {
   return (
     <Form>
       <InputText type="text" placeholder="Buscar proyectos" />
-      <InputSubmit type="submit">Buscar</InputSubmit>
+      <InputSubmit type="submit">Buscador</InputSubmit>
     </Form>
   );
 };
