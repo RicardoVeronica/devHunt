@@ -1,14 +1,10 @@
-import styles from "@emotion/styled";
+// import styles from "@emotion/styled";
 import Layout from "../components/layout";
 
 export default function Home() {
   return (
     <Layout>
-      <Heading>Hello world</Heading>
+      <h1>Hello world</h1>
     </Layout>
   );
 }
-
-const Heading = styles.h1`
-  color: red;
-`;

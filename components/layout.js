@@ -1,7 +1,7 @@
 import React from "react";
+import Head from "next/head";
 import Header from "./Header";
 import { Global, css } from "@emotion/react";
-import Head from "next/head";
 
 export default function Layout({ children }) {
   return (
@@ -18,7 +18,6 @@ export default function Layout({ children }) {
           href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto+Slab:400,700&display=swap"
           rel="stylesheet"
         />
-        <link rel="stylesheet" href="../styles/app.css" />
       </Head>
 
       <Header />
@@ -30,18 +29,18 @@ export default function Layout({ children }) {
           :root {
             --gray: #3d3d3d;
             --gray2: #6f6f6f;
+            --gray3: #e1e1e1;
             --orange: #da552f;
-          }
-
-          html {
-            font-size: 62.5%;
-            box-sizing: border-box;
           }
 
           *,
           *:after,
           *:before {
-            box-sizing: inherit;
+            box-sizing: border-box;
+          }
+
+          html {
+            font-size: 62.5%;
           }
 
           body {
@@ -62,10 +61,6 @@ export default function Layout({ children }) {
           h2 {
             font-family: "Roboto Slab", serif;
             font-weight: 700;
-          }
-
-          h3 {
-            font-family: "PT Sans", sans-serif;
           }
 
           ul {
