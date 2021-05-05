@@ -32,24 +32,20 @@ export default function Layout({ children }) {
             --gray3: #e1e1e1;
             --orange: #da552f;
           }
-
           *,
           *:after,
           *:before {
             box-sizing: border-box;
           }
-
           html {
             font-size: 62.5%;
           }
-
           body {
             // 1.6rem = 16px
             font-size: 1.6rem;
             line-height: 1.5;
             font-family: "PT Sans", sans-serif;
           }
-
           h1,
           h2,
           h3 {
@@ -62,13 +58,11 @@ export default function Layout({ children }) {
             font-family: "Roboto Slab", serif;
             font-weight: 700;
           }
-
           ul {
             list-style: none;
             margin: 0;
             padding: 0;
           }
-
           a {
             text-decoration: none;
           }

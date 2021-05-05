@@ -6,12 +6,12 @@ import Link from "next/link";
 import styled from "@emotion/styled";
 
 const Header = () => {
-  const user = true;
+  const user = false;
 
   return (
     <MainHeader>
       <HeaderContainer>
-        <div>
+        <Div>
           <Link href="/">
             <a>
               <Logo>D</Logo>
@@ -19,9 +19,9 @@ const Header = () => {
           </Link>
           <Buscador />
           <Nav />
-        </div>
+        </Div>
 
-        <DivRight>
+        <Div>
           {user ? (
             <>
               <Paragraph>Hola: Ricardo</Paragraph>
@@ -41,7 +41,7 @@ const Header = () => {
               </Link>
             </>
           )}
-        </DivRight>
+        </Div>
       </HeaderContainer>
     </MainHeader>
   );
@@ -71,7 +71,7 @@ const Logo = styled.p`
   margin-right: 2rem;
 `;
 
-const DivRight = styled.div`
+const Div = styled.div`
   display: flex;
   align-items: center;
 `;

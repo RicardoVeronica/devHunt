@@ -1,9 +1,9 @@
 import Layout from "../components/layout";
 
-export default function Home() {
+export default function Populares() {
   return (
     <Layout>
-      <h1>Hello world</h1>
+      <h1>Populares</h1>
     </Layout>
   );
 }

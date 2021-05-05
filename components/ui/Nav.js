@@ -1,8 +1,9 @@
 import Link from "next/link";
+import styled from "@emotion/styled";
 
 const Nav = () => {
   return (
-    <nav>
+    <Navigation>
       <Link href="/">
         <a>Inicio</a>
       </Link>
@@ -14,8 +15,23 @@ const Nav = () => {
       <Link href="/nuevo-producto">
         <a>Nuevo Producto</a>
       </Link>
-    </nav>
+    </Navigation>
   );
 };
+
+const Navigation = styled.nav`
+  padding-left: 2rem;
+
+  a {
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    color: var(--gray2);
+    font-family: "PT Sans", sans-serif;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+`;
 
 export default Nav;
